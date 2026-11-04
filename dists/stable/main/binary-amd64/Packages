@@ -1,19 +1,19 @@
 Package: monopbx
 Architecture: all
-Version: 0.1.0~edge.a405fca
+Version: 0.1.0~edge.a405fca.2
 Priority: optional
 Section: comm
 Maintainer: MonoPbx <apt@monopbx.invalid>
-Installed-Size: 180
+Installed-Size: 184
 Depends: bash (>= 5), ca-certificates, curl, gnupg, iproute2, tar, gzip, coreutils, sed, gawk | mawk, procps,
  docker.io (>= 24) | docker-ce (>= 5:24), docker-compose-v2 (>= 2.24) | docker-compose-plugin (>= 2.24)
 Suggests: ufw
-Filename: pool/main/m/monopbx/monopbx_0.1.0~edge.a405fca_all.deb
-Size: 122812
-MD5sum: 45be6b0da8771707be68ae698da2e2bd
-SHA1: af0b12f25402b5f7ba4db32b26cfa70738848a3c
-SHA256: 88ccb3d918fba81ad2f92bd78b2dcd15165fd58d3be4f5029e4f4fad2af07615
-SHA512: e046f6ebec1fc7099ce08de3bb90ad7df185a0c9cf4cf4836974a8c0304e81bc0b29e9aba4a8383aa0e9c1276c30764f2f4c8a60f952c8f404c139df96eedd4d
+Filename: pool/main/m/monopbx/monopbx_0.1.0~edge.a405fca.2_all.deb
+Size: 122992
+MD5sum: b4163e410f50e126b8edfca5727bee64
+SHA1: fdf329b79068264792953e5741351173a8b581a3
+SHA256: 55a2b0565fab5cab8d6d6fae275431fb64d8203d2b871ee42a58622f84fdb96e
+SHA512: eed8d05150e46cbd4f10a2a20e058e5df29c1722b8b53eda0a97ff8175d95ef37c83be8d191a7758845f2d72f4f727497e52777629295eca8f0962b8b3be0342
 Homepage: https://github.com/ilinaya/monopbx-apt
 Description: MonoPbx business phone system (Docker Compose bundle)
  MonoPbx PBX, web console and softphone, run as Docker containers under
