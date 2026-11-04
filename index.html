@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MonoPbx APT repository</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:52rem;margin:2rem auto;padding:0 1rem;color:#1d1d1f;background:#fff}
+pre{background:#f4f4f6;padding:.8rem;overflow-x:auto;border-radius:6px}code{font-size:.9em}</style></head>
+<body><h1>MonoPbx APT repository</h1>
+<p>Latest package: <code>monopbx 0.1.0~edge.a405fca</code> (Ubuntu 24.04 LTS, amd64).</p>
+<h2>One command</h2>
+<pre>curl -fsSL https://ilinaya.github.io/monopbx-apt/install.sh | sudo bash -s -- --domain pbx.example.com --email admin@example.com</pre>
+<h2>Or with apt</h2>
+<pre>sudo install -d -m 0755 /etc/apt/keyrings
+curl -fsSL https://ilinaya.github.io/monopbx-apt/key.gpg | sudo tee /etc/apt/keyrings/monopbx.gpg &gt;/dev/null
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/monopbx.gpg] https://ilinaya.github.io/monopbx-apt stable main" | sudo tee /etc/apt/sources.list.d/monopbx.list
+sudo apt-get update &amp;&amp; sudo apt-get install -y monopbx
+sudo monopbx setup --domain pbx.example.com --email admin@example.com</pre>
+<p>Signing key fingerprint: <code>320DC78EFDC8439C04F5FCA63E87FE3D4C715372</code></p>
+</body></html>
