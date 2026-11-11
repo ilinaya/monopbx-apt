@@ -52,8 +52,11 @@ monopbx_install() {
   apt-get install -y -qq ca-certificates curl gnupg >/dev/null
 
   say "MonoPbx APT repository: $repo"
-  local tmp; tmp="$(mktemp -d)"
-  trap 'rm -rf "$tmp"' EXIT
+  # Global, not `local`: the EXIT trap runs after this function has returned (set -u would
+  # otherwise fail with "tmp: unbound variable" and hide the real error).
+  APT_TMP="$(mktemp -d)"
+  trap 'rm -rf "${APT_TMP:-}"' EXIT
+  local tmp="$APT_TMP"
   curl -fsSL --proto '=https' --tlsv1.2 --retry 3 "$repo/key.gpg" -o "$tmp/key.gpg" || die "cannot download $repo/key.gpg"
   local fprs; fprs="$(gpg --show-keys --with-colons "$tmp/key.gpg" 2>/dev/null | awk -F: '$1=="fpr" {print $10}')"
   grep -qx "$KEY_FPR" <<<"$fprs" || die "the key at $repo/key.gpg does not have the expected fingerprint $KEY_FPR; refusing to trust it"

@@ -24,3 +24,29 @@ Description: MonoPbx business phone system (Docker Compose bundle)
  .
  Images: ghcr.io/ilinaya/monopbx:a405fca@sha256:1fd41872175aa81038057d3d9634d8640ccd9f8ea68a25ccb97ad1282e2b7180 ghcr.io/ilinaya/monopbx-media:a405fca@sha256:bb791c746487a3eda991c6619f7b7d97dc812c744eb780368c6eb794a9689bb9 ghcr.io/ilinaya/monopbx-rtpengine:a405fca@sha256:129ed645e212e27844cff13b1097efddd861172c5bda99443ed99d433833d96f
 
+Package: monopbx
+Architecture: all
+Version: 1.0.0~edge.20261110081926.c88e8e2
+Priority: optional
+Section: comm
+Maintainer: MonoPbx <apt@monopbx.invalid>
+Installed-Size: 208
+Depends: bash (>= 5), ca-certificates, curl, gnupg, iproute2, tar, gzip, coreutils, sed, gawk | mawk, procps,
+ docker.io (>= 24) | docker-ce (>= 5:24), docker-compose-v2 (>= 2.24) | docker-compose-plugin (>= 2.24)
+Suggests: ufw
+Filename: pool/main/m/monopbx/monopbx_1.0.0~edge.20261110081926.c88e8e2_all.deb
+Size: 141164
+MD5sum: 3e9de3b3ecf93dc3cc86e2fd44f83d6d
+SHA1: fc660c421a5b77ac1b93aa8321bea5011a8d9d9d
+SHA256: fff788c0495566c556c4190b34f69b859978df361084a93e450f6d0b18ac9155
+SHA512: 564f6b1291355e6e2624560a2e174bc1c66e7c0608750d24356fce4249fe6fa2376e63cb0724b3cb3150df1549c44c1e8bb5c8836b8a1e9773e39b72d6176994
+Homepage: https://github.com/ilinaya/monopbx-apt
+Description: MonoPbx business phone system (Docker Compose bundle)
+ MonoPbx PBX, web console and softphone, run as Docker containers under
+ systemd (monopbx.service). After installing, run
+   sudo monopbx setup --domain pbx.example.com --email admin@example.com
+ to generate the secrets, get a Let's Encrypt certificate (Caddy), start
+ the stack and print the first-administrator setup link.
+ .
+ Images: ghcr.io/ilinaya/monopbx@sha256:18ad4208447e1b4961a189ba8c5e181a6154e9a30f620651229647930044bc83 ghcr.io/ilinaya/monopbx-media@sha256:e681353ffc000ac8c1bf0d0a82263301cf225029a94befe89d2e8a56418b1add ghcr.io/ilinaya/monopbx-rtpengine@sha256:848948f179523cd37dd27ffcf4e015f5a4c7157e9495b0fc96fa5d2f3ebb869b ghcr.io/ilinaya/monopbx-updater@sha256:d66429bc079dba2fcca81fe3922bd87c163c58431980a23eabf360432bac6cca
+
