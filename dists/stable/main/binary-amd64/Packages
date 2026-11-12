@@ -26,32 +26,6 @@ Description: MonoPbx business phone system (Docker Compose bundle)
 
 Package: monopbx
 Architecture: all
-Version: 1.0.0~edge.20261112083441.5df62f7
-Priority: optional
-Section: comm
-Maintainer: MonoPbx <apt@monopbx.invalid>
-Installed-Size: 212
-Depends: bash (>= 5), ca-certificates, curl, gnupg, iproute2, tar, gzip, coreutils, sed, gawk | mawk, procps,
- docker.io (>= 24) | docker-ce (>= 5:24), docker-compose-v2 (>= 2.24) | docker-compose-plugin (>= 2.24)
-Suggests: ufw
-Filename: pool/main/m/monopbx/monopbx_1.0.0~edge.20261112083441.5df62f7_all.deb
-Size: 144132
-MD5sum: ca2a7f336c3634ebe45afc5b5417fef5
-SHA1: ac434dc0f434518fb647bf91d82e34e19b1ea1d8
-SHA256: 56da8bef68a34689544e727a0219a6c647944d230e33fccdaa58d8116a7f682d
-SHA512: 8535c48ca2aaa8a5c1d958375072dc03fed7089975e40f96043c2fd9975f93b5e43358f1e30d2f48259cd064b466d03ae320e29371371738de12102dcdc57fea
-Homepage: https://github.com/ilinaya/monopbx-apt
-Description: MonoPbx business phone system (Docker Compose bundle)
- MonoPbx PBX, web console and softphone, run as Docker containers under
- systemd (monopbx.service). After installing, run
-   sudo monopbx setup --domain pbx.example.com --email admin@example.com
- to generate the secrets, get a Let's Encrypt certificate (Caddy), start
- the stack and print the first-administrator setup link.
- .
- Images: ghcr.io/ilinaya/monopbx@sha256:f7dc5d07a9956516a373681a3ab83ee3780507139782db9675332ac6d72bd0bf ghcr.io/ilinaya/monopbx-media@sha256:9e1f5c8e77f7e80233558e1846b1bdc5ac35d43c9a63a25b07d1982fbdee210f ghcr.io/ilinaya/monopbx-rtpengine@sha256:d5e44fa5ff31e86154b44059d3eb930f9f206cae8b4f028d8d70527e1e4b5b22 ghcr.io/ilinaya/monopbx-updater@sha256:60404608de5500242da358ef10994e66fb1fa13848b7017eb34d5247a25f3084
-
-Package: monopbx
-Architecture: all
 Version: 1.0.0~edge.20261112095258.664c5fd
 Priority: optional
 Section: comm
@@ -543,4 +517,30 @@ Description: MonoPbx business phone system (Docker Compose bundle)
  the stack and print the first-administrator setup link.
  .
  Images: ghcr.io/ilinaya/monopbx@sha256:dad80c84f60159a5611d4502c379ab8fe9fa35d156896eefddf2480b43096afd ghcr.io/ilinaya/monopbx-media@sha256:5cb4d169f319290045daa5ce2965ddd5169b817ca39bf5dad0c9008af37d1f48 ghcr.io/ilinaya/monopbx-rtpengine@sha256:2e78918287e11f61213396248119d5451991502bd3ab977fa6e95c339f45adfc ghcr.io/ilinaya/monopbx-updater@sha256:8b8c8d847b5c43922bb59557a2055a07347a0c5dab864d7ff1b1f7e9149ffe45
+
+Package: monopbx
+Architecture: all
+Version: 1.0.0~edge.20261112154953.4817fdf
+Priority: optional
+Section: comm
+Maintainer: MonoPbx <apt@monopbx.invalid>
+Installed-Size: 240
+Depends: bash (>= 5), ca-certificates, curl, gnupg, iproute2, tar, gzip, coreutils, sed, gawk | mawk, procps,
+ docker.io (>= 24) | docker-ce (>= 5:24), docker-compose-v2 (>= 2.24) | docker-compose-plugin (>= 2.24)
+Suggests: ufw
+Filename: pool/main/m/monopbx/monopbx_1.0.0~edge.20261112154953.4817fdf_all.deb
+Size: 145496
+MD5sum: 81848875ac39f525b3ede0092c788cb9
+SHA1: d65e14c284eeeb89d53812f4ae3bb0df704d9dbb
+SHA256: 5f4b84f66a3c39bb0f7cba29589cab8e178209e6375e8915b2cf02c90612926c
+SHA512: 59f0164b05abd5b8c72887c4167242959453afdbbba0a5448fc6974a7b771d06fb8d56e0e26f73aeef44bbf30c4e836b49c1bd342303130366b8825243ebd902
+Homepage: https://github.com/ilinaya/monopbx-apt
+Description: MonoPbx business phone system (Docker Compose bundle)
+ MonoPbx PBX, web console and softphone, run as Docker containers under
+ systemd (monopbx.service). After installing, run
+   sudo monopbx setup --domain pbx.example.com --email admin@example.com
+ to generate the secrets, get a Let's Encrypt certificate (Caddy), start
+ the stack and print the first-administrator setup link.
+ .
+ Images: ghcr.io/ilinaya/monopbx@sha256:2940bcb9139bbf5fe1085f20c19936443cc92d1f6f56ee2d5a8826159b5f27b1 ghcr.io/ilinaya/monopbx-media@sha256:966a8484e928dbd2d56c886b793e4abd53ded9d748cff3ad2341e30b1f76cd40 ghcr.io/ilinaya/monopbx-rtpengine@sha256:653aa3e9b9eb34be1b6ad6766d097610af1f1ae57e8e1f664944befdeb537e42 ghcr.io/ilinaya/monopbx-updater@sha256:d0ad8dd0e39c7f8dc8f72de1162001cfec59f809ff3299048e6ba0e0bb320267
 
