@@ -1,24 +1,24 @@
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Thu, 12 Nov 2026 19:59:17 +0000
+Date: Thu, 12 Nov 2026 20:09:24 +0000
 Description: MonoPbx packages
 Label: MonoPbx
 Origin: MonoPbx
 Suite: stable
 MD5Sum:
- d84fb38807b7432e45d771d863fc8d04             1478 Release
- 6e7eb3df92a9b5d9926dba4ce8eb5cd3            34628 main/binary-amd64/Packages
- d05e656d5a8e5816871f88fd5ab4b1f0             8245 main/binary-amd64/Packages.gz
+ 6449ed467b04a43c48e4edf383b169eb             1478 Release
+ cd52236ac876e3214cc06d1b6cb81d6d            34628 main/binary-amd64/Packages
+ 36c26b5dc8ba6c8495479a12e171ffa5             8253 main/binary-amd64/Packages.gz
 SHA1:
- 7e5e5902838ad4877de85f708a05a4ce9453d454             1478 Release
- ebef81e9a2869ce58c04277dcc1974bcdb8c8c79            34628 main/binary-amd64/Packages
- d1ab9cce0d4d9d1dfb6b3ea63ca68bd76ed150cc             8245 main/binary-amd64/Packages.gz
+ c074f66823411baafd4fe98aeb9a246fd17dbdc2             1478 Release
+ 039626edf424ff02ba095ed9803c294244bada0b            34628 main/binary-amd64/Packages
+ d17165321c41a72dac33359375dc1a6954628076             8253 main/binary-amd64/Packages.gz
 SHA256:
- fc9bc04eacbd0e7546ddf113e674fa14e254768eefdbd16535cad93720be6b97             1478 Release
- ee7e90c801ab24324194983ac59e6292dee0ad1705c64cea9948d8be8471992c            34628 main/binary-amd64/Packages
- e5a5078d63964f979f42d5683162d1d90b61492dbb0ce59f31f0ed4046086b58             8245 main/binary-amd64/Packages.gz
+ d8c51090ff73e4afd35d739b0d4f488108749937ad707c4039ff0e700ce34dc0             1478 Release
+ b25ab4e723e8b2923743c63079208bede4440a832d195821f209298c7ccdbe64            34628 main/binary-amd64/Packages
+ 8e3f0b2e7b74891569f45d7bcc7b70dc83b39cb58e813398c098a836c59dba2b             8253 main/binary-amd64/Packages.gz
 SHA512:
- b081d98c139af4bccc134aabb4b43cca98b7f5ef29d3583e881ae24c2447910e50af7856ce0fda7e2d5de3c5f4d4f8fe0b8a16253eda67dec7cd1f32b61e761f             1478 Release
- 862a27affb0a6ee5c59966975214ee571e9e7e6aa9b20a4914c97441d80224e8949a91171e73714755c6358b30b515282c93aad935c5b841d224f7ffcd3d8bc8            34628 main/binary-amd64/Packages
- 5dc71f5ce1da772824e5a730bf4fcfea616886f79d7e5525e33d8ea6a3d3c8830383d9abc19d374497368a3197d57663fa1fbf6c562b78502d1fa0489570e996             8245 main/binary-amd64/Packages.gz
+ e245b4bf23907e9084983233bad1e6227d858a7cff1fed8ba82e27ccf0bdb154c4db4ebe51182955afc36fab8e47e711932b8d55a089cd2e6a48c2cd231e378c             1478 Release
+ 3708a5b5384a2f35eb637d436a22582b0ff6c73c6bd2003b43af2f892a33d50f9d4b804d9574dd72765d15e9f7b413fce05afd15d35032a7910bdeda329edda6            34628 main/binary-amd64/Packages
+ 7577aaf2c5be48c6c58a431a8edd7fd0ac9074e4a7640b1915a9448f7dcec45b886db7a000061ee16a38126c8e8d23e1fd1e1b6642155c2e69bf5e25b484aa3e             8253 main/binary-amd64/Packages.gz
