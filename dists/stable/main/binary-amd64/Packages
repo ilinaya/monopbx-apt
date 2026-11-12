@@ -102,3 +102,29 @@ Description: MonoPbx business phone system (Docker Compose bundle)
  .
  Images: ghcr.io/ilinaya/monopbx@sha256:f7dc5d07a9956516a373681a3ab83ee3780507139782db9675332ac6d72bd0bf ghcr.io/ilinaya/monopbx-media@sha256:9e1f5c8e77f7e80233558e1846b1bdc5ac35d43c9a63a25b07d1982fbdee210f ghcr.io/ilinaya/monopbx-rtpengine@sha256:d5e44fa5ff31e86154b44059d3eb930f9f206cae8b4f028d8d70527e1e4b5b22 ghcr.io/ilinaya/monopbx-updater@sha256:60404608de5500242da358ef10994e66fb1fa13848b7017eb34d5247a25f3084
 
+Package: monopbx
+Architecture: all
+Version: 1.0.0~edge.20261112095258.664c5fd
+Priority: optional
+Section: comm
+Maintainer: MonoPbx <apt@monopbx.invalid>
+Installed-Size: 236
+Depends: bash (>= 5), ca-certificates, curl, gnupg, iproute2, tar, gzip, coreutils, sed, gawk | mawk, procps,
+ docker.io (>= 24) | docker-ce (>= 5:24), docker-compose-v2 (>= 2.24) | docker-compose-plugin (>= 2.24)
+Suggests: ufw
+Filename: pool/main/m/monopbx/monopbx_1.0.0~edge.20261112095258.664c5fd_all.deb
+Size: 144904
+MD5sum: 24802574403664aab635d7d876ea9821
+SHA1: 2e5ded12c5eac1200d8d4b8a438303fcaf040455
+SHA256: 71591d8aa4bfc72fec381e744ee3a9393edaa314ffdb78f28ddf76479ac80a15
+SHA512: b76fbcac949299b7bbea2473bff19a2198d2fa868199727bf7e892e2a18a03f947f0f9d7eaf5d92db3047002cd58505a4de59a65e60b68c66ab85079c8fab9d2
+Homepage: https://github.com/ilinaya/monopbx-apt
+Description: MonoPbx business phone system (Docker Compose bundle)
+ MonoPbx PBX, web console and softphone, run as Docker containers under
+ systemd (monopbx.service). After installing, run
+   sudo monopbx setup --domain pbx.example.com --email admin@example.com
+ to generate the secrets, get a Let's Encrypt certificate (Caddy), start
+ the stack and print the first-administrator setup link.
+ .
+ Images: ghcr.io/ilinaya/monopbx@sha256:100fc89288e51f491d5645b93b0146c1d63db93bbd8760facb72cf5e50197730 ghcr.io/ilinaya/monopbx-media@sha256:71b8b68ce3816a16bd49c1d8c75c6a1e7632216051923d10978c0f9133188985 ghcr.io/ilinaya/monopbx-rtpengine@sha256:ea7ab65bbc2b164e155944d1147019db6f06a6ef45712125deacaaaac43e184c ghcr.io/ilinaya/monopbx-updater@sha256:ccd2c820847c8c1aff266582d9fc593fd5d47eb80a75e7687217e7fd6342c3b4
+
