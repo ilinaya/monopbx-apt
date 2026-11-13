@@ -7,7 +7,7 @@
 # 2. adds the MonoPbx APT repository and its signing key (fingerprint pinned below and verified)
 # 3. apt-get install monopbx (pulls in Ubuntu's docker.io and docker-compose-v2)
 # 4. runs `monopbx setup` with the options given here (see `monopbx help`): --domain, --email, --no-tls, --relay URL,
-#    --no-relay, --public-ip, --turn, --yes. Without --domain the name is <a-b-c-d>.sslip.io (the public IP with dashes).
+#    --no-relay, --public-ip, --turn, --country CC, --yes. Without --domain the name is <a-b-c-d>.sslip.io (the public IP with dashes).
 #
 # Without --email (and without --no-tls) on a server that is not set up yet, the script asks for the address on the
 # terminal (/dev/tty, so it also works through `curl | sudo bash`); with no terminal it stops with the error below.
